@@ -1,0 +1,274 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html, body {
+    height: 100%;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 16px;
+    background-color: #F5F5F5;
+}
+.wrapper {
+    width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    background-color: #eee;
+    position: relative;
+}
+.wrapper p {
+    height: 40px;
+    background-color: grey;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+}
+.content-box  {
+    overflow-y: scroll;
+    height: calc(100% - 90px);
+}
+.avitor {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+.mine .avitor {
+    background-image: url(img/3.png);
+}
+.robot .avitor {
+    background-image: url(img/dog1.jpg);
+}
+.text {
+    max-width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+    word-wrap: break-word;
+    margin: 0 10px;
+}
+.mine .text {
+    background-color: greenyellow;
+   
+}
+
+.mine .text::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 10px solid transparent;
+    border-left-color: greenyellow;
+    right: -20px;
+    top: 10px;
+}
+.robot .text::before {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 10px solid transparent;
+    left: -20px;
+    border-right-color: #fff;
+}
+mine {
+    float: right;
+    width: 500px;
+    margin: 10px;
+}
+.robot {
+    float: left;
+    width: 500px;
+    margin: 10px;
+}
+.robot div {
+    float: left;
+}
+.mine div {
+    float: right;
+}
+.input-box {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    bottom: 0px;
+    background-color: #ddd;
+    text-align: center;
+}
+.input-box #inp {
+    width: 500px;
+    height: 30px;
+    font-size: 16px;
+    display: inline-block;
+    outline: none;
+    border: none;
+}
+.input-box .btn:hover {
+    background-color: #bbb;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    height: 16px;
+    background-color: #F5F5F5;
+}
+html, body {
+    height: 100%;
+}
+.wrapper {
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid #ddd;
+    background-color: #eee;
+    height: 100%;
+}
+p {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: grey;
+    color: #fff;
+}
+.content-box {
+    overflow-y: scroll;
+    height: calc(100% - 90px);
+}
+.avitor {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+.mine .text::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 10px solid transparent;
+    border-left-color: yellowgreen;
+    right: -20px;
+    top: 10px;
+}
+.robot .text::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right-color: #ddd;
+    left: -20px;
+}
+.mine .avitor {
+    background-image: url(img/3.png);
+}
+.robot .avitor {
+    background-image: url(img/dog1.jpg);
+}
+.text {
+    max-width: 250px;
+    border: 1px solid #ddd;
+    word-wrap: break-word;
+    border-radius: 5px;
+    margin: 0 10px;
+    position: relative;
+}
+.mine .text {
+    background-color: yellowgreen;
+}
+.robot .text {
+    background-color: #ddd;
+}
+.mine div{
+    float: right;
+}
+.mine, .robot{
+    width: 500px;
+    margin: 10px;
+}
+.robot div {
+    float: left;
+}
+.mine {
+    float: right;
+}
+.robot {
+    float: left;
+}
+.input-box {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    background-color: #ddd;
+    bottom: 0;
+    text-align: center;
+    line-height: 50px;
+}
+.input-box #inp {
+    width: 500px;
+    height: 30px;
+    font-size: 16px;
+    display: inline-block;
+    /* 轮廓宽度，样式，颜色综合； */
+    outline: none;
+    border:none;
+}
+.input-box .btn {
+    font-size: 14px;
+    padding: 2px 4px;
+    margin:0 5px;
+    background-color: #ccc;
+    border: none;
+    outline: none;
+}
+.input-box .btn:hover {
+    background-color: #bbb;
+}
